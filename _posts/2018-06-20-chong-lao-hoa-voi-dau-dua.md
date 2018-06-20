@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Chống lão hóa da và làm trẻ hóa làn da với dầu dừa
-date: 2017-07-06 00:01:01
+date: 2018-06-06 00:01:01
 category: web
 tags: [dầu dừa, lão hóa da, trẻ hóa làn da, Dưỡng da mặt, bí quyết sức khỏe]
 ---
@@ -9,8 +9,8 @@ Giữ làn da luôn trắng mịn và tươi trẻ là niềm mơ ước của r
 ---
 
 Nguyên nhân gây lão hóa da:
-Chúng ta hãy tìm hiểu những nguyên nhân chính  nào có thể gây lão hóa da nhanh như vậy. Theo các nhà khoa học hàng đầu trên thế giới thì nguyên nhân chính gây nên lão hóa da thậm chí gây bệnh tật hoặc ung thư làcác gốc tự do.
-![ten buc hinh](http://tinhdaudua.com.vn/wp-content/uploads/2014/01/tre-hoa-da-nho-tinh-dau-dua.jpg"ten buc hinh")
+Chúng ta hãy tìm hiểu những nguyên nhân chính  nào có thể gây lão hóa da nhanh như vậy. Theo các nhà khoa học hàng đầu trên thế giới thì nguyên nhân chính gây nên lão hóa da thậm chí gây bệnh tật hoặc ung thư là các gốc tự do.
+![tre-hoa-da-nho-tinh-dau-dua](/images/tre-hoa-da-nho-tinh-dau-dua.jpg "tre-hoa-da-nho-tinh-dau-dua")
 
 Các gốc tự  do tự  sinh ra trong cơ thể bạn mà không có cách nào ngăn cản được, các gốc tự  do sinh ra trong quá trình trao đổi chất của cơ thể, như  hít thở, vận động, ăn uống, hút thuốc, tress, tia tử ngoại, uống rượu, ô nhiễm môi trường, sử dụng các hóa chất mỹ phẩm làm đẹp, đặt biệt là hàng ngày chúng ta phải ăn các thức ăn có nhiều độc tố, chất bảo quản, phụ da, chất tẩy trắng…
 
