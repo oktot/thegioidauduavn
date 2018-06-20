@@ -1,0 +1,96 @@
+--- 
+layout: default 
+--- 
+{% for cat in site.all_categories %}{% if page.category == cat[0] %}{% assign category_name = cat[1] %}{% assign category_link = cat[2] %}{% endif %}{% endfor %}
+{% assign category_posts=site.categories[page.category] %}{% assign prevpost = nil %}{% assign nextpost = nil %}{% assign found = false %}
+{% for post in category_posts %}{% if found==true %}{% assign prevpost = post %}{% break %}{% endif %}{% if page.url==post.url %}{% assign found = true %}{% endif %}{% if found==false %}{% assign nextpost = post %}{% endif %}{% endfor %}
+{% assign category_posts=nil %}
+<div  class="post_frame">
+<!-- Navi -->
+	
+	<div class="post_navi">
+	<a href="/">Home</a>&nbsp;>&nbsp;
+	<a href="/web/index.html">Web</a>&nbsp;>&nbsp;
+	<span class="post_navi_span">{{ page.title }}</span>
+</div>
+
+<!-- Title -->
+<div class="post_titlearea">
+	<h1>{{ page.title }}</h1>
+	<hr class="hrline"/>
+	<div class="post_titledate"/>
+		Dach sách bài viết：<a href="/web/index.html">Web</a>&nbsp;&nbsp;&nbsp;
+		{% if page.tags.size > 0%}
+			Thẻ：{% for tag in page.tags %}
+					{% if tag != "" %}
+					<a href="/tag/{{ tag }}.html">{{ tag }}</a>
+					{% if forloop.index != page.tags.size %},
+					{% endif %}
+					{% endif %}
+				 {% endfor %}
+		{% endif %}&nbsp;&nbsp;&nbsp;
+		Ngày：{{ page.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;
+		<span id="busuanzi_container_page_pv">Đọc：<span id="busuanzi_value_page_pv"></span></span>
+	</div>
+</div>
+
+<br/>
+
+<!-- content -->
+<div style="text-indent:2em;padding:10px">
+{{ content }}
+</div>
+
+<div style="text-align:center">
+	<div>
+		<b>Bài viết này là bài viết gốc, sao chép xin dẫn nguồn：</b>» <a href="{{site.url}}{{page.url}}" title="{{page.name}}">{{ page.title }}</a>
+	</div>
+	<div class="friend_alert">
+		Nếu nội dung của trang web này hữu ích, hãy nhớ chia sẻ hoặc gởi đến nhiều người khác, cảm ơn bạn！
+	</div>
+	
+</div>
+<hr/>
+
+<!-- next and previous -->
+<div style="margin:10px">
+  <span class="next">
+		{% if prevpost %}
+    Trước đó：
+    <a href="{{prevpost.url}}">
+      {{prevpost.title}}
+    </a>
+		{%else%}
+			<a href="{{category_link}}">
+				{{category_name}}
+			</a>
+		{%endif%} 
+  </span>
+  
+  <div style="float:right">
+  <span class="prev" >
+		{% if nextpost %}
+    Tiếp theo：
+    <a href="{{nextpost.url}}">
+      {{nextpost.title}}
+    </a>
+		{%else%}
+			<a href="{{category_link}}">
+				{{category_name}}
+			</a>
+		{%endif%}
+  </span>
+  </div>
+  
+</div>
+<!--
+<hr>
+
+<div class="media">
+  {% include comment.html %} 
+</div>
+-->
+</div>
+
+<!-- donate 
+<script type="text/javascript" src="/js/donate.js"></script>-->

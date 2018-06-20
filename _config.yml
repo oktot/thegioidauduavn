@@ -1,0 +1,35 @@
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title.html 
+excerpt_separator: "<!-- more -->"
+
+github: 
+author: "thegioidaudua.vn"
+email: dieu.nt@gmail.com
+name: "thegioidaudua's Blog"
+baseurl: /
+url: http://www.thegioidaudua.vn/
+domain: thegioidaudua.vn
+
+all_categories: [
+  ["Read", "Read","/web/index.html"], 
+  ["About", "About","/about.html"],
+  ["User Agreement", "User Agreement","/User-Agreement.html"], 
+  ["Privacy Policy", "Privacy Policy","/Privacy-Policy.html"]
+]
+
+paginate: 10 
+paginate_path: "index_:num"
+
+index_layout: "index.html"
+category_layout: "_layouts/category.html"
+tag_layout: "_layouts/tag.html"
+
+gems: [jekyll-paginate]
+
+collections:
+  docs:
+    output: true
+
+copyright: []
+#timezone: Asia/Hanoi

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://www.thegioidaudua.vn/atom.xml
